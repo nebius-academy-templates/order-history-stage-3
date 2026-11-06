@@ -13,7 +13,7 @@ Two questions to answer there, before generating:
 - Which field is **required and nullable**? (Not optional. Required. It is always present, and it can be `null`.)
 - Which field looks required when you read the properties but isn't in the `required` array?
 
-Those two are where a translation goes wrong, and a model reading the properties top to bottom will get at least one of them wrong.
+Those two are where a translation goes wrong, and a model reading the properties top to bottom often gets at least one of them wrong.
 
 ### 2. Let Claude draft it
 
