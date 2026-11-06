@@ -6,14 +6,14 @@ interface OrderItemResponse {
   productId: string;
   variantId?: string;
   productName: string;
-  quantity: number;
+  quantity: string;
   unitPrice: number;
   lineTotal: number;
 }
 
 interface OrderResponse {
   orderId: string;
-  status: OrderStatus;
+  status: string;
   createdAt: string;
   totalAmount: number;
   items: OrderItemResponse[];
@@ -21,7 +21,6 @@ interface OrderResponse {
     line1: string;
     line2?: string;
     city: string;
-    county?: string;
     postcode: string;
     country: string;
   };
